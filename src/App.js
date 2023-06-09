@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import logo from './images/kanon-logo.png';
+import Machine from './Components/Machine';
+import { runMachine } from './services/api';
+
+import './sass/style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="kanon-start">
+        <img src={logo} className="kanon-logo" alt="logo" />
+        <button onClick={runMachine}>Play Now</button>
       </header>
+
+      <body>
+        <div className="container">
+          <div className="slotcontainer">
+            <div className="slot">
+              <div className="symbols" id="slot1Symbols"></div>
+            </div>
+
+            <div className="slot">
+              <div className="symbols" id="slot2Symbols"></div>
+            </div>
+
+            <div className="slot">
+              <div className="symbols" id="slot3Symbols"></div>
+            </div>
+          </div>
+
+          <div style={{ display: "flex" }}>
+            {/* <button onClick={spin}>Spin</button>
+            <button onClick={reset}>Reset</button> */}
+          </div>
+        </div>
+      </body>
+      <Machine/>
+      
     </div>
   );
 }
