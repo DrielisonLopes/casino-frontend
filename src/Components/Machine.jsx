@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import {runMachine} from '../services/api'
 
 const SLOT_SYMBOLS = [
-  ['🍒', '🍎', '🍌', '🍋'],
-  ['🍒', '🍎', '🍌', '🍋'],
-  ['🍒', '🍎', '🍌', '🍋']
+  ['❓', '🍒', '🍎', '🍌', '🍋'],
+  ['❓', '🍒', '🍎', '🍌', '🍋'],
+  ['❓', '🍒', '🍎', '🍌', '🍋']
 ];
 
 const Machine = () => {
@@ -34,11 +34,11 @@ const Machine = () => {
     setDisplayedSymbols(generateInitialSymbols());
   }, []);
 
-  const createSymbolElement = (symbol) => {
-    return (
-      <div className="symbol">{symbol}</div>
-    );
-  };
+  // const createSymbolElement = (symbol) => {
+  //   return (
+  //     <div className="symbol">{symbol}</div>
+  //   );
+  // };
 
   const reset = () => {
     slotsRefs.current.forEach(slot => {
@@ -67,13 +67,13 @@ const Machine = () => {
       if (symbols && symbolHeight && symbolCount) {
         symbols.innerHTML = '';
 
-        symbols.appendChild(createSymbolElement('❓'));
+        // symbols.appendChild(createSymbolElement('❓'));
 
-        for (let i = 0; i < 3; i++) {
-          SLOT_SYMBOLS[index].forEach(symbol => {
-            symbols.appendChild(createSymbolElement(symbol));
-          });
-        }
+        // for (let i = 0; i < 3; i++) {
+        //   SLOT_SYMBOLS[index].forEach(symbol => {
+        //     symbols.appendChild(createSymbolElement(symbol));
+        //   });
+        // }
 
         const totalDistance = symbolCount * symbolHeight;
         const randomOffset = -Math.floor(Math.random() * (symbolCount - 1) + 1) * symbolHeight;
@@ -110,18 +110,24 @@ const Machine = () => {
   };
 
   return (
-    <div>
+    <div className="container">
+      <div className="slotcontainer">
       {SLOT_SYMBOLS.map((row, rowIndex) => (
-        <div key={rowIndex} ref={ref => slotsRefs.current[rowIndex] = ref}>
-          <div ref={ref => symbolsRefs.current[rowIndex] = ref} className="symbols">
-            {displayedSymbols[rowIndex]}
+        <div key={rowIndex} ref={ref => slotsRefs.current[rowIndex] = ref} className="slot">
+            <div ref={ref => symbolsRefs.current[rowIndex] = ref} className="symbols">
+              {displayedSymbols[rowIndex]}
+            </div>
           </div>
-        </div>
       ))}
+      </div>
       
-      {JSON.stringify(data)}
+      <div className='containercoins'>
+        <span className='coins'>{coins}</span>
+      </div>
+      {/* {JSON.stringify(data)} */}
       {data?.result1}
-      {coins}
+      {data?.result2}
+      {data?.result3}
       <button onClick={getData}>Spin</button>
     </div>
   );

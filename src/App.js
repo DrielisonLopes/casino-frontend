@@ -13,28 +13,6 @@ function App() {
         <button onClick={runMachine}>Play Now</button>
       </header>
 
-      <body>
-        <div className="container">
-          <div className="slotcontainer">
-            <div className="slot">
-              <div className="symbols" id="slot1Symbols"></div>
-            </div>
-
-            <div className="slot">
-              <div className="symbols" id="slot2Symbols"></div>
-            </div>
-
-            <div className="slot">
-              <div className="symbols" id="slot3Symbols"></div>
-            </div>
-          </div>
-
-          <div style={{ display: "flex" }}>
-            {/* <button onClick={spin}>Spin</button>
-            <button onClick={reset}>Reset</button> */}
-          </div>
-        </div>
-      </body>
       <Machine/>
       
     </div>

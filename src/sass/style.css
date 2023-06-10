@@ -8,7 +8,7 @@ body .kanon-start {
   align-items: center;
   height: 90vh;
 }
-body .kanon-start a {
+body .kanon-start button {
   background: #000;
   color: #fff;
   margin: 20px;
@@ -22,13 +22,8 @@ body .kanon-start a {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-body .kanon-start a:hover {
+body .kanon-start button:hover {
   background: linear-gradient(90deg, rgb(204, 75, 65) 0%, rgb(241, 154, 43) 50%, rgb(204, 75, 65) 100%);
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -38,15 +33,13 @@ body {
   justify-content: center;
   height: 100vh;
 }
-
-.slotcontainer {
+.container .slotcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
-
-.slot {
+.container .slotcontainer .slot {
   width: 100px;
   height: 150px;
   border: 1px solid black;
@@ -57,12 +50,26 @@ body {
   background: #fafafa;
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
 }
-
-.slot .symbols {
+.container .slotcontainer .slot .symbols {
   position: absolute;
   top: 0;
   left: 0;
   transition: top 5s;
+}
+.container .containercoins {
+  background: linear-gradient(to bottom, #1b1b1b 0%, #383838 8%, #3a3a3a 20%, #0a0a0a 47%, #010101 50%, #0d0d0d 54%, #444444 100%);
+  width: 286px;
+  color: #78FF00;
+  font-family: "Quantico", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+.container .containercoins .coins {
+  display: flex;
+  justify-content: flex-end;
+  transition: all;
 }
 
 .slot .symbol {
