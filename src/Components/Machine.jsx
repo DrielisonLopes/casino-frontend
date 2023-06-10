@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import {runMachine} from '../services/api'
+import {runMachine} from '../services/api';
+import Rules from './Rules';
+
 
 const SLOT_SYMBOLS = [
   ['❓', '🍒', '🍎', '🍌', '🍋'],
@@ -16,6 +18,7 @@ const Machine = () => {
   const [data, setData] = useState(null);
   const [coins, setCoins] = useState(20);
 
+  // get data
   const getData = async () => {
     const result = await runMachine(coins);
     console.log(result)
@@ -33,12 +36,6 @@ const Machine = () => {
   useEffect(() => {
     setDisplayedSymbols(generateInitialSymbols());
   }, []);
-
-  // const createSymbolElement = (symbol) => {
-  //   return (
-  //     <div className="symbol">{symbol}</div>
-  //   );
-  // };
 
   const reset = () => {
     slotsRefs.current.forEach(slot => {
@@ -66,14 +63,6 @@ const Machine = () => {
 
       if (symbols && symbolHeight && symbolCount) {
         symbols.innerHTML = '';
-
-        // symbols.appendChild(createSymbolElement('❓'));
-
-        // for (let i = 0; i < 3; i++) {
-        //   SLOT_SYMBOLS[index].forEach(symbol => {
-        //     symbols.appendChild(createSymbolElement(symbol));
-        //   });
-        // }
 
         const totalDistance = symbolCount * symbolHeight;
         const randomOffset = -Math.floor(Math.random() * (symbolCount - 1) + 1) * symbolHeight;
@@ -120,15 +109,30 @@ const Machine = () => {
           </div>
       ))}
       </div>
+
+      {/* {JSON.stringify(data)} */}
       
-      <div className='containercoins'>
+      <div class="slotcontainer">
+        <div class="slot">
+          <div class="symbols"><span>❓</span>{data?.result1}</div>
+        </div>
+        <div class="slot">
+          <div class="symbols"><span>❓</span>{data?.result2}</div>
+        </div>
+        <div class="slot">
+          <div class="symbols"><span>❓</span>{data?.result3}</div>
+        </div>
+      </div>
+      
+      <div className='coinscontainer'>
         <span className='coins'>{coins}</span>
       </div>
-      {/* {JSON.stringify(data)} */}
-      {data?.result1}
-      {data?.result2}
-      {data?.result3}
-      <button onClick={getData}>Spin</button>
+      
+      <div className='buttonscontainer'>
+        <button onClick={getData}>Spin</button>
+        <Rules/>
+      </div>
+
     </div>
   );
 };
