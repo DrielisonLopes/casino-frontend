@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import gameData from '../game-data.json';
+import logo from '../images/kanon-logo.png';
+import { runMachine } from '../services/api';
 
 const requireImage = require.context('../images/games', true);
 
@@ -26,17 +28,26 @@ const GameList = () => {
 
   return (
     <div>
-      <div className="search-bar">
-        <input type="text" id="search-input" placeholder="Search for a game..." value={searchTerm} onChange={handleSearch} />
+
+      <div className="searchBar">
+        <label>Find your favorite game: </label>
+        <input type="text" id="search-input" placeholder="Typing here..." value={searchTerm} onChange={handleSearch} />
       </div>
-      <div className="game-list">
+
+      <div className="gameList">
+        
+      <main className="kanonStart">
+        <img src={logo} className="kanonLogo" alt="logo" />
+        <button onClick={runMachine}>Play Indication</button>
+      </main>
         {filteredGames.map(game => (
-          <div className="game-card" key={game.id}>
-            <img className="game-thumbnail" src={getGameImagePath(game.id)} alt={game.title} />
+          <a href={runMachine} className="gameList-card" key={game.id}>
+            <img className="gameList-thumbnail" src={getGameImagePath(game.id)} alt={game.title} />
             <h3>{game.title}</h3>
-          </div>
+          </a>
         ))}
       </div>
+
     </div>
   );
 };

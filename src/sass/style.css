@@ -3,14 +3,64 @@ body {
   background-color: #140830;
   margin: 0;
 }
-body .kanon-start {
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  font-family: sans-serif;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  margin: 30px 20px 60px;
+}
+.searchBar label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+.searchBar input {
+  width: 70%;
+  height: 30px;
+}
+
+.gameList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 30px;
+}
+.gameList .gameList-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+  min-width: 170px;
+  margin: 10px auto;
+  background: darkslateblue;
+  padding: 15px 10px;
+  border-radius: 5px;
+  height: 150px;
+  transform: scale(1);
+  transition: transform 0.25s linear;
+}
+.gameList .gameList-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.25s linear 0;
+}
+.gameList .gameList-card h3 {
+  white-space: nowrap;
+}
+
+.kanonStart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
-body .kanon-start button {
+.kanonStart button {
   background: #000;
   color: #fff;
   margin: 20px;
@@ -24,8 +74,25 @@ body .kanon-start button {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-body .kanon-start button:hover {
+.kanonStart button:hover {
   background: linear-gradient(90deg, rgb(204, 75, 65) 0%, rgb(241, 154, 43) 50%, rgb(204, 75, 65) 100%);
+}
+
+.header {
+  position: relative;
+  margin: 0 0 30px;
+}
+.header .headerLogo {
+  position: absolute;
+  width: 54px;
+}
+.header .headerTitle {
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  font-family: sans-serif;
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 .container {
@@ -149,23 +216,6 @@ button {
 .modalRules .rulesContent ul {
   list-style: none;
   padding: 0 40px;
-}
-
-.header {
-  position: relative;
-  margin: 0 0 30px;
-}
-.header .headerLogo {
-  position: absolute;
-  width: 54px;
-}
-.header .headerTitle {
-  position: absolute;
-  top: 25%;
-  left: 20px;
-  font-family: sans-serif;
-  color: gold;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,11 +13,6 @@ function Main() {
           <h3>Just register and start having fun!</h3>
         </div>
       </header>
-
-      {/* <main className="kanon-start">
-        <img src={logo} className="kanon-logo" alt="logo" />
-        <button onClick={runMachine}>Play Now</button>
-      </main> */}
     </div>
   );
 }

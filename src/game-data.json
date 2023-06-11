@@ -2,79 +2,79 @@
     "games": [
       {
         "id": 1,
-        "title": "Blackjack Master",
+        "title": "Casino Vault",
         "thumb": {
-          "url": "images/games/game-1.png"
+          "url": "/images/games/game-1.png"
         }
       },
       {
         "id": 2,
-        "title": "Roulette Royale",
+        "title": "Data machine",
         "thumb": {
           "url": "/images/games/game-2.png"
         }
       },
       {
         "id": 3,
-        "title": "Poker Pro",
+        "title": "Snes Poker Pro",
         "thumb": {
-          "url": "./images/games/game-3.png"
+          "url": "/images/games/game-3.png"
         }
       },
       {
         "id": 4,
-        "title": "Slots Bonanza",
+        "title": "Roulette Royale",
         "thumb": {
-          "url": "https://example.com/slots-bonanza.jpg"
+          "url": "/images/games/game-4.png"
         }
       },
       {
         "id": 5,
-        "title": "Video Poker Deluxe",
+        "title": "Poker Deluxe",
         "thumb": {
-          "url": "https://example.com/video-poker-deluxe.jpg"
+          "url": "/images/games/game-5.png"
         }
       },
       {
         "id": 6,
-        "title": "Pai Gow Poker",
+        "title": "Casino 777",
         "thumb": {
-          "url": "https://example.com/pai-gow-poker.jpg"
+          "url": "/images/games/game-6.png"
         }
       },
       {
         "id": 7,
-        "title": "Wheel of Fortune",
+        "title": "Poker of Fortune",
         "thumb": {
-          "url": "https://example.com/wheel-of-fortune.jpg"
+          "url": "/images/games/game-7.png"
         }
       },
       {
         "id": 8,
-        "title": "Casino Blackjack",
+        "title": "Big Win Slots",
         "thumb": {
-          "url": "https://example.com/casino-blackjack.jpg"
+          "url": "/images/games/game-8.png"
         }
       },
       {
         "id": 9,
-        "title": "Big Win Slots",
+        "title": "Casino Machine",
         "thumb": {
-          "url": "https://example.com/big-win-slots.jpg"
+          "url": "/images/games/game-9.png"
         }
       },
       {
         "id": 10,
-        "title": "High Stakes Roulette",
+        "title": "High Roulette",
         "thumb": {
-          "url": "https://example.com/high-stakes-roulette.jpg"
+          "url": "/images/games/game-10.png"
         }
       },
         {
         "id": 11,
-        "title": "Jacks or Better",
+        "title": "Lucky Magician",
         "thumb": {
-            "url": "https://example.com/jacks-or-better.jpg"
+            "url": "/images/games/game-11.png"
         }
       }
     ]
