@@ -1,0 +1,81 @@
+{
+    "games": [
+      {
+        "id": 1,
+        "title": "Blackjack Master",
+        "thumb": {
+          "url": "images/games/game-1.png"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Roulette Royale",
+        "thumb": {
+          "url": "/images/games/game-2.png"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Poker Pro",
+        "thumb": {
+          "url": "./images/games/game-3.png"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Slots Bonanza",
+        "thumb": {
+          "url": "https://example.com/slots-bonanza.jpg"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Video Poker Deluxe",
+        "thumb": {
+          "url": "https://example.com/video-poker-deluxe.jpg"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Pai Gow Poker",
+        "thumb": {
+          "url": "https://example.com/pai-gow-poker.jpg"
+        }
+      },
+      {
+        "id": 7,
+        "title": "Wheel of Fortune",
+        "thumb": {
+          "url": "https://example.com/wheel-of-fortune.jpg"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Casino Blackjack",
+        "thumb": {
+          "url": "https://example.com/casino-blackjack.jpg"
+        }
+      },
+      {
+        "id": 9,
+        "title": "Big Win Slots",
+        "thumb": {
+          "url": "https://example.com/big-win-slots.jpg"
+        }
+      },
+      {
+        "id": 10,
+        "title": "High Stakes Roulette",
+        "thumb": {
+          "url": "https://example.com/high-stakes-roulette.jpg"
+        }
+      },
+        {
+        "id": 11,
+        "title": "Jacks or Better",
+        "thumb": {
+            "url": "https://example.com/jacks-or-better.jpg"
+        }
+      }
+    ]
+}

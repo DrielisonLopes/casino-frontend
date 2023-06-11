@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import {runMachine} from '../services/api';
 import Rules from './Rules';
 
+import logo from "../images/kanon-logo.png";
 
 const SLOT_SYMBOLS = [
   ['❓', '🍒', '🍎', '🍌', '🍋'],
@@ -21,7 +22,7 @@ const Machine = () => {
   // get data
   const getData = async () => {
     const result = await runMachine(coins);
-    console.log(result)
+    
     setCoins(result.coins)
     setData(result);
   };
@@ -99,6 +100,13 @@ const Machine = () => {
   };
 
   return (
+    <>
+    <header className="kanon-start">
+      <img src={logo} className="kanon-logo" alt="logo" />
+      <button onClick={runMachine}>Play Now</button>
+    </header>
+
+
     <div className="container">
       <div className="slotcontainer">
       {SLOT_SYMBOLS.map((row, rowIndex) => (
@@ -112,15 +120,15 @@ const Machine = () => {
 
       {/* {JSON.stringify(data)} */}
       
-      <div class="slotcontainer">
-        <div class="slot">
-          <div class="symbols"><span>❓</span>{data?.result1}</div>
+      <div className="slotcontainer">
+        <div className="slot">
+          <div className="symbols"><span>❓</span>{data?.result1}</div>
         </div>
-        <div class="slot">
-          <div class="symbols"><span>❓</span>{data?.result2}</div>
+        <div className="slot">
+          <div className="symbols"><span>❓</span>{data?.result2}</div>
         </div>
-        <div class="slot">
-          <div class="symbols"><span>❓</span>{data?.result3}</div>
+        <div className="slot">
+          <div className="symbols"><span>❓</span>{data?.result3}</div>
         </div>
       </div>
       
@@ -134,6 +142,7 @@ const Machine = () => {
       </div>
 
     </div>
+    </>
   );
 };
 

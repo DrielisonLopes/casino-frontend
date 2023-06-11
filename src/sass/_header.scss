@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    margin: 0 0 30px;
+
+    .headerLogo {
+        position: absolute;
+        width: 54px;
+    }
+
+    .headerTitle {
+        position: absolute;
+        top: 25%;
+        left: 20px;
+        font-family: sans-serif;
+        color: gold;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    }
+}

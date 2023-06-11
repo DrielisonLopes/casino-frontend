@@ -1,5 +1,7 @@
 body {
+  background-color: #000;
   background-color: #140830;
+  margin: 0;
 }
 body .kanon-start {
   display: flex;
@@ -147,6 +149,23 @@ button {
 .modalRules .rulesContent ul {
   list-style: none;
   padding: 0 40px;
+}
+
+.header {
+  position: relative;
+  margin: 0 0 30px;
+}
+.header .headerLogo {
+  position: absolute;
+  width: 54px;
+}
+.header .headerTitle {
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  font-family: sans-serif;
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */

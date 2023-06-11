@@ -20,25 +20,25 @@ function Rules() {
           <h2>Rules</h2>
           <ul>
             <li>
-                <div class="slotcontainer small">
+                <div className="slotcontainer small">
                 <img src={spin} height={35} alt="button spin" />
                 <span>-1 coin 🪙</span>
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍒
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍒
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍒
                         </div>
                     </div>
@@ -46,19 +46,19 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍒
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍒
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             
                         </div>
                     </div>
@@ -66,19 +66,19 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍎
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍎
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍎
                         </div>
                     </div>
@@ -86,19 +86,19 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍎
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍎
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             
                         </div>
                     </div>
@@ -106,19 +106,19 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍌
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍌
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍌
                         </div>
                     </div>
@@ -126,19 +126,19 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍌
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍌
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             
                         </div>
                     </div>
@@ -146,19 +146,19 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div class="slotcontainer small">
-                    <div class="slot">
-                        <div class="symbols">
+                <div className="slotcontainer small">
+                    <div className="slot">
+                        <div className="symbols">
                             🍋
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍋
                         </div>
                     </div>
-                    <div class="slot">
-                        <div class="symbols">
+                    <div className="slot">
+                        <div className="symbols">
                             🍋
                         </div>
                     </div>

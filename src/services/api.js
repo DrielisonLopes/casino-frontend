@@ -8,7 +8,7 @@ export async function runMachine(coins) {
       }
   
       const data = await response.json();
-      console.log(data);
+      
       // You can perform additional operations with the data here
       return data
     } catch (error) {
