@@ -20,13 +20,13 @@ function Rules() {
           <h2>Rules</h2>
           <ul>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                 <img src={spin} height={35} alt="button spin" />
                 <span>-1 coin 🪙</span>
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍒
@@ -46,7 +46,7 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍒
@@ -66,7 +66,7 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍎
@@ -86,7 +86,7 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍎
@@ -106,7 +106,7 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍌
@@ -126,7 +126,7 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍌
@@ -146,7 +146,7 @@ function Rules() {
                 </div>
             </li>
             <li>
-                <div className="slotcontainer small">
+                <div className="slotContainer small">
                     <div className="slot">
                         <div className="symbols">
                             🍋

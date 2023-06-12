@@ -5,7 +5,13 @@
     justify-content: center;
     height: 100vh;
 
-    .slotcontainer {
+    .tileContainer {
+        width: 350px;
+        margin: 0 0 50px;
+        filter: brightness(1.1);
+    }
+
+    .slotContainer {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,9 +31,7 @@
             .symbols {
                 position: absolute;
                 top: 25%;
-                top: -25px;
                 left: 16px;
-                transition: top 5s;
                 font-size: 50px;
             }
         }
@@ -57,7 +61,7 @@
         }
     }
 
-    .coinscontainer {
+    .coinsContainer {
         background: linear-gradient(to bottom, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
         width: 286px;
         color: #78FF00;
@@ -74,7 +78,7 @@
         }
     }
 
-    .buttonscontainer {
+    .buttonsContainer {
         position: relative;
         display: flex;
 
@@ -84,17 +88,6 @@
             }
         }
     }
-}
-
-
-.slot .symbol {
-    width: 100px;
-    height: 150px;
-    font-size: 60px;
-    line-height: 100px;
-    display: block;
-    text-align: center;
-    padding-top: 25px;
 }
 
 button {

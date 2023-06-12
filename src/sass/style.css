@@ -111,13 +111,18 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   justify-content: center;
   height: 100vh;
 }
-.container .slotcontainer {
+.container .tileContainer {
+  width: 350px;
+  margin: 0 0 50px;
+  filter: brightness(1.1);
+}
+.container .slotContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
-.container .slotcontainer .slot {
+.container .slotContainer .slot {
   width: 100px;
   height: 150px;
   border: 1px solid black;
@@ -128,36 +133,34 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   background: #fafafa;
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
 }
-.container .slotcontainer .slot .symbols {
+.container .slotContainer .slot .symbols {
   position: absolute;
   top: 25%;
-  top: -25px;
   left: 16px;
-  transition: top 5s;
   font-size: 50px;
 }
-.container .slotcontainer.small {
+.container .slotContainer.small {
   display: block;
 }
-.container .slotcontainer.small .slot {
+.container .slotContainer.small .slot {
   width: 30px;
   height: 30px;
   margin: 0 1px;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2) inset;
 }
-.container .slotcontainer.small .slot .symbols {
+.container .slotContainer.small .slot .symbols {
   top: 1px;
   left: 3px;
   transition: none;
   font-size: 18px;
 }
-.container .slotcontainer.small span {
+.container .slotContainer.small span {
   float: right;
   font-family: "Quantico", sans-serif;
   font-size: 14px;
   margin: 5px 0 0;
 }
-.container .coinscontainer {
+.container .coinsContainer {
   background: linear-gradient(to bottom, #1b1b1b 0%, #383838 8%, #3a3a3a 20%, #0a0a0a 47%, #010101 50%, #0d0d0d 54%, #444444 100%);
   width: 286px;
   color: #78FF00;
@@ -167,27 +170,17 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   padding: 0 10px;
   margin: 0 0 20px;
 }
-.container .coinscontainer .coins {
+.container .coinsContainer .coins {
   display: flex;
   justify-content: flex-end;
   transition: all;
 }
-.container .buttonscontainer {
+.container .buttonsContainer {
   position: relative;
   display: flex;
 }
-.container .buttonscontainer button:hover {
+.container .buttonsContainer button:hover {
   filter: brightness(1.1);
-}
-
-.slot .symbol {
-  width: 100px;
-  height: 150px;
-  font-size: 60px;
-  line-height: 100px;
-  display: block;
-  text-align: center;
-  padding-top: 25px;
 }
 
 button {
@@ -202,7 +195,7 @@ button {
 
 .modalRules {
   position: absolute;
-  top: -306px;
+  top: -310px;
   left: -55px;
   background: #fafafa;
   width: 306px;
