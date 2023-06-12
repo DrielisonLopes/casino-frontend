@@ -6,7 +6,7 @@
     height: 100vh;
 
     .tileContainer {
-        width: 350px;
+        width: 500px;
         margin: 0 0 50px;
         filter: brightness(1.1);
     }
@@ -18,8 +18,8 @@
         margin-bottom: 20px;
 
         .slot {
-            width: 100px;
-            height: 150px;
+            width: 150px;
+            height: 200px;
             border: 1px solid black;
             border-radius: 7.5px;
             display: inline-block;
@@ -30,9 +30,9 @@
 
             .symbols {
                 position: absolute;
-                top: 25%;
-                left: 16px;
-                font-size: 50px;
+                top: 16%;
+                left: 15px;
+                font-size: 90px;
             }
         }
 
@@ -63,7 +63,7 @@
 
     .coinsContainer {
         background: linear-gradient(to bottom, #1b1b1b 0%,#383838 8%,#3a3a3a 20%,#0a0a0a 47%,#010101 50%,#0d0d0d 54%,#444444 100%);
-        width: 286px;
+        width: 436px;
         color: #78FF00;
         font-family: "Quantico", sans-serif;
         font-size: 24px;
@@ -83,6 +83,8 @@
         display: flex;
 
         button {
+            padding: 10px 50px;
+
             &:hover {
                 filter: brightness(1.1);
             }

@@ -41,7 +41,7 @@ const Machine = () => {
 
       if (symbols && symbolHeight && symbolCount) {
         symbols.innerHTML = '';
-        
+
         const randomOffset = -Math.floor(Math.random() * (symbolCount - 1) + 1) * symbolHeight;
         symbols.style.top = `${randomOffset}px`;
 
@@ -54,7 +54,6 @@ const Machine = () => {
       }
     });
   };
-
   const logDisplayedSymbols = () => {
     const symbols = slotsRefs.current.map((slot, index) => {
       const symbols = slot?.current?.firstChild;
@@ -64,7 +63,6 @@ const Machine = () => {
       }
       return null;
     });
-
     setDisplayedSymbols(symbols);
   };
 

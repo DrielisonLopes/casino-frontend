@@ -1,42 +1,31 @@
 ## Front End React Developer Test
 
-- It needs to be done using React with Mobx or Redux with NodeJS API. - contain a README file with all the instructions to download and run the project.
-- any unnecessary comments or console.(log) will be noted.
+This repository contains the code for the Front End React Developer Test project. The project aims to assess the skills and capabilities of React developers.
 
-### Test Requirements
+## Installation
 
-- Use latest React Hooks
-- Use Eslint and prettifier 
-- Organised folder structure
-- Comment your code
-- VCS implementation early on with commits and branches for features/fixes/refactoring
+To get started with the project, follow these steps:
 
-##### Bonus Points ✅
-- Deploy the application using Heroku, Google Cloud or any cloud service.
+1. Clone the repository:
+- frontend: https://github.com/DrielisonLopes/kanon-frontend
+- backend: https://github.com/DrielisonLopes/kanon-api
 
+2. Navigate to the project directory:
 
-### Question (1) ✅
-- Create a page that will contain a list of all the games provided in the game-data.json file.
-- For this task you can use the thumb.url property to display the game thumbnail.
+3. Install the dependencies by running the command `npm install`.
 
-### Question (2) ✅
-- In this task you are required to create a search functionality:
-When the user types inside the search bar, the game list created in Question 1 should be updated accordingly.
+## Usage
 
-### Question (3) ✅
-- Considering a Slot machine defined like this:
-- Reel1: [“cherry”, ”lemon”, “apple”, ”lemon”, “banana”, “banana”, ”lemon”, ”lemon”]
-- Reel2: [”lemon”, “apple”, ”lemon”, “lemon”, “cherry”, “apple”, ”banana”, ”lemon”]
-- Reel3: [”lemon”, “apple”, ”lemon”, “apple”, “cherry”, “lemon”, ”banana”, ”lemon”]
+To use the application, follow these steps:
 
-- The user starts with 20 coins. Each spin will cost the user 1 coin.
-- *Please note that slot machines only consider pairs a match if they are in order from left to right.<b>Eg:</b>
-Apple, Cherry, Apple - no win
-Apple, Apple, Cherry - win
+1. Start the development server on the backend `npm run dev` and build the frontend with `npm start`
 
-###### Rewards ✅
-- 3 cherries in a row: 50 coins, 2 cherries in a row: 40 coins
-- 3 Apples in a row: 20 coins, 2 Apples in a row: 10 coins
-- 3 Bananas in a row: 15 coins, 2 Bananas in a row: 5 coins
-- 3 lemons in a row: 3 coins
-Keep a record of the wins and losses for the user session.
+2. Open your web browser and visit `http://localhost:3000` to access the application on FrontEnd and `http://localhost:8080` to access the application on BackEnd.
+
+Or access the deploy link made in Gcloud as follows:
+
+## Deployment
+
+1. Deploy the application to production:
+- frontend: https://kanon-frontend.vercel.app/
+- backend: https://kanon-node-389214.wn.r.appspot.com/

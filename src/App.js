@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header/>
-      {/* <Machine/> */}
+      <Machine/>
       <GameList/>
       <Footer/>
     </div>

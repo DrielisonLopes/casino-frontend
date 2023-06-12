@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../images/background-img.jpg";
-import logo from "../images/kanon-logo.png";
+import logo from "../images/kanon-logo-short.png";
 
 function Main() {
   return (
