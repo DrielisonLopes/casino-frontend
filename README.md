@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## Front End React Developer Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- It needs to be done using React with Mobx or Redux with NodeJS API. - contain a README file with all the instructions to download and run the project.
+- any unnecessary comments or console.(log) will be noted.
 
-## Available Scripts
+### Test Requirements
 
-In the project directory, you can run:
+- Use latest React Hooks
+- Use Eslint and prettifier 
+- Organised folder structure
+- Comment your code
+- VCS implementation early on with commits and branches for features/fixes/refactoring
 
-### `npm start`
+##### Bonus Points ✅
+- Deploy the application using Heroku, Google Cloud or any cloud service.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Question (1) ✅
+- Create a page that will contain a list of all the games provided in the game-data.json file.
+- For this task you can use the thumb.url property to display the game thumbnail.
 
-### `npm test`
+### Question (2) ✅
+- In this task you are required to create a search functionality:
+When the user types inside the search bar, the game list created in Question 1 should be updated accordingly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Question (3) ✅
+- Considering a Slot machine defined like this:
+- Reel1: [“cherry”, ”lemon”, “apple”, ”lemon”, “banana”, “banana”, ”lemon”, ”lemon”]
+- Reel2: [”lemon”, “apple”, ”lemon”, “lemon”, “cherry”, “apple”, ”banana”, ”lemon”]
+- Reel3: [”lemon”, “apple”, ”lemon”, “apple”, “cherry”, “lemon”, ”banana”, ”lemon”]
 
-### `npm run build`
+- The user starts with 20 coins. Each spin will cost the user 1 coin.
+- *Please note that slot machines only consider pairs a match if they are in order from left to right.<b>Eg:</b>
+Apple, Cherry, Apple - no win
+Apple, Apple, Cherry - win
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###### Rewards ✅
+- 3 cherries in a row: 50 coins, 2 cherries in a row: 40 coins
+- 3 Apples in a row: 20 coins, 2 Apples in a row: 10 coins
+- 3 Bananas in a row: 15 coins, 2 Bananas in a row: 5 coins
+- 3 lemons in a row: 3 coins
+Keep a record of the wins and losses for the user session.
