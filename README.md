@@ -1,6 +1,4 @@
-## Front End React Developer Test
-
-This repository contains the code for the Front End React Developer Test project. The project aims to assess the skills and capabilities of React developers.
+# React Casino
 
 ## Installation
 
