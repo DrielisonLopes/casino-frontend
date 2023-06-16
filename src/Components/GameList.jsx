@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import gameData from '../game-data.json';
-import logo from '../images/kanon-logo.png';
 import { runMachine } from '../services/api';
 
 const requireImage = require.context('../images/games', true);
@@ -36,10 +35,10 @@ const GameList = () => {
 
       <div className="gameList">
         
-      <main className="kanonStart">
-        <img src={logo} className="kanonLogo" alt="logo" />
+      {/* <main className="casinoStart">
+        <img src={logo} className="casinoLogo" alt="logo" />
         <button onClick={runMachine}>Play Indication</button>
-      </main>
+      </main> */}
         {filteredGames.map(game => (
           <a href={runMachine} className="gameList-card" key={game.id}>
             <img className="gameList-thumbnail" src={getGameImagePath(game.id)} alt={game.title} />

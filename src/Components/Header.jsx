@@ -1,12 +1,10 @@
 import React from "react";
 import bg from "../images/background-img.jpg";
-import logo from "../images/kanon-logo-short.png";
 
 function Main() {
   return (
     <div>
       <header className="header">
-        <img src={logo} className="headerLogo" alt="background" />
         <img src={bg} width="100%" alt="background" />
         <div className="headerTitle">
           <h2>WELCOME! Earn 100 coins.</h2>

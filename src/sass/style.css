@@ -59,17 +59,17 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   white-space: nowrap;
 }
 
-.kanonStart {
+.casinoStart {
   position: relative;
   top: -10px;
   display: flex;
   flex-direction: column;
   margin: 0 10px;
 }
-.kanonStart img {
+.casinoStart img {
   width: 190px;
 }
-.kanonStart button {
+.casinoStart button {
   background: #000;
   color: #fff;
   margin: 20px 0 0;
@@ -83,7 +83,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-.kanonStart button:hover {
+.casinoStart button:hover {
   background: linear-gradient(90deg, rgb(204, 75, 65) 0%, rgb(241, 154, 43) 50%, rgb(204, 75, 65) 100%);
 }
 
