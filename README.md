@@ -5,8 +5,8 @@
 To get started with the project, follow these steps:
 
 1. Clone the repository:
-- frontend: https://github.com/DrielisonLopes/kanon-frontend
-- backend: https://github.com/DrielisonLopes/kanon-api
+- frontend: https://github.com/DrielisonLopes/casino-frontend
+- backend: https://github.com/DrielisonLopes/casino-api
 
 2. Navigate to the project directory:
 
@@ -25,5 +25,5 @@ Or access the deploy link made in Gcloud as follows:
 ## Deployment
 
 1. Deploy the application to production:
-- frontend: https://kanon-frontend.vercel.app/
+- frontend: https://casino-portfolio.vercel.app/
 - backend: https://kanon-node-389214.wn.r.appspot.com/
