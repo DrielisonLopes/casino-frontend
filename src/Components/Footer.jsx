@@ -5,8 +5,8 @@ function Footer() {
     <footer style={{background: "black", color: "#ccc"}}>
       <div className="container" style={{height: "10vh"}} >
         <span>
-          © Copyright - By Drielison Lopes -{" "}
-          <a href="https://react.dev/" target="_blank">with React</a>
+          © Copyright - By <a href="https://drielison-lopes.vercel.app/" target="_blank">Drielison Lopes</a> -{" "}
+          with React
         </span>
       </div>
     </footer>
