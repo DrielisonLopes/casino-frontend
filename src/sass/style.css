@@ -6,6 +6,10 @@ body {
 body h1, body h2, body h3, body h4, body h5, body h6, body p {
   font-family: sans-serif;
 }
+body .linkFooter {
+  text-decoration: none;
+  color: cornflowerblue;
+}
 
 .searchBar {
   display: flex;
