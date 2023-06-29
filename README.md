@@ -25,5 +25,5 @@ Or access the deploy link made in Gcloud as follows:
 ## Deployment
 
 1. Deploy the application to production:
-- frontend: https://casino-portfolio.vercel.app/
-- backend: https://kanon-node-389214.wn.r.appspot.com/
+- frontend (Vercel): https://casino-portfolio.vercel.app/
+- backend (Google Cloud): https://kanon-node-389214.wn.r.appspot.com/
